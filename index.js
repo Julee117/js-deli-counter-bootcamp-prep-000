@@ -19,7 +19,6 @@ function currentLine(katsDeliLine) {
     return "The line is currently empty.";
   }
   var arr = [];
-  if (katsDeliLine.length >= 1) {
     for (let i = 0; i < katsDeliLine.length; i++) {
       arr.push(i+1 + "." + katsDeliLine[i]);
     }
