@@ -13,3 +13,11 @@ function nowServing(katsDeliLine) {
     return "There is nobody waiting to be served!";
   }
 }
+
+function currentLine(katsDeliLine) {
+  if (katsDeliLine.length >= 1) {
+    return `The line is currently: `
+  } else {
+    return "The line is currently empty."
+  }
+}
