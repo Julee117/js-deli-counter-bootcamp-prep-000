@@ -9,6 +9,7 @@ function nowServing(katsDeliLine) {
   if (katsDeliLine.length >= 1) {
     return `We are serving ${katsDeliline.shift()}.`;
     katsDeliline.shift();
+    return katsDeliline;
   } else {
     return "There is nobody waiting to be served!";
   }
