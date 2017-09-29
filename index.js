@@ -18,7 +18,7 @@ function currentLine(katsDeliLine) {
   var str = `The line is currently: `
   if (katsDeliLine.length >= 1) {
     for (let i = 0; i < katsDeliLine.length; i++) {
-      str.push(`#{i + 1}. #{katsDeliLine[i + 1]}`);
+      str.concat(`#{i + 1}. #{katsDeliLine[i + 1]}`);
     }
   } else {
     return "The line is currently empty."
