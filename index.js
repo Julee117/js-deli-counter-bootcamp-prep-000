@@ -7,9 +7,8 @@ function takeANumber(katsDeliLine, name) {
 
 function nowServing(katsDeliLine) {
   if (katsDeliLine.length >= 1) {
-    return `We are serving ${katsDeliline.shift()}.`;
-    katsDeliline.shift();
-    return katsDeliline;
+    console.log(`We are serving ${katsDeliline.shift()}.`);
+    return katsDeliline.shift();
   } else {
     return "There is nobody waiting to be served!";
   }
