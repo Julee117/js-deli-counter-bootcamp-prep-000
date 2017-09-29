@@ -20,7 +20,7 @@ function currentLine(katsDeliLine) {
   }
   var arr = [];
     for (let i = 0; i < katsDeliLine.length; i++) {
-      arr.push(i+1 + "." + katsDeliLine[i]);
+      arr.push(i+1 + ". " + katsDeliLine[i]);
     }
       return "The line is currently: " + arr.join(', ');
 }
