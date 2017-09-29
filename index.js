@@ -5,10 +5,9 @@ function takeANumber(katsDeliLine, name) {
    return `Welcome, ${name}. You are number ${katsDeliLine.length} in line.`;
 }
 
-function nowServing() {
-  if (katsDeli.length >= 1) {
-    console.log(`We are serving ${katsDeli.shift()}.`);
-    katsDeli.shift();
+function nowServing(katsDeliLine) {
+  if (katsDeliLine.length >= 1) {
+    console.log(`We are serving ${katsDeliLine.shift()}.`);
   } else {
     return "There is nobody waiting to be served!";
   }
