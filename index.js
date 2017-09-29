@@ -15,13 +15,13 @@ function nowServing(katsDeliLine) {
 }
 
 function currentLine(katsDeliLine) {
-  var arr = []
+  var arr = `The line is currently: `
   if (katsDeliLine.length >= 1) {
     for (let i = 0; i < katsDeliLine.length; i++) {
-      arr.push(`#{i + 1}. #{katsDeliLine[i]}`);
+      arr += (`#{i + 1}. #{katsDeliLine[i]}`);
     }
   } else {
     return "The line is currently empty."
   }
-  return `The line is currently: + arr;
+  return arr;
 }
